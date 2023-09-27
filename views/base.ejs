@@ -1,0 +1,122 @@
+<%-include('header')-%>
+<div class="container">
+    <div class="banner-text">
+        <ul>
+            <li style="font-size: 3em;" >EDU</li>
+            <li style="margin-left: 46em;" >AmeegoLabs</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    
+</div>
+
+    <div class="aimation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <div class="container square-box d-flex justify-content-center   "  style="margin-top: 7em;">
+                <div class="container ">
+                    <div class=" button-box d-flex justify-content-center d-grid gap-2">
+                        <div  id="btn"></div>
+                        <button type="button" class="toggle-button " onclick="login()"  >Login</button>
+                        <button type="button" class="toggle-button" onclick="register()"   >Sign in</button>
+                        
+                      </div>
+                      
+                    <!-- Login form -->
+                      <form action="/login"  method = "POST" id = "login" class="input-group d-flex justify-content-center" id="login ">
+                        
+                        <div class="mb-3  d-flex justify-content-center align-item-center pt-3">
+                         
+                        
+                         <input type="text" placeholder="LOGIN if you already have an account" class="p-3 ms-5 d-flex justify-content-center" style="width: 23em;border-top: 0; border-left: 0;border-right: 0; border-bottom: 0; ">
+                        </div>
+                        <div class="mb-3  d-flex justify-content-center align-item-center pt-3">
+                            
+                            <i class="fa-solid fa-envelope pt-3 " style="font-size: 1.9em; color: #4fc3f7;"></i>
+                            
+    
+                            
+                            <input type="email" placeholder="Email" name="email" class="p-3 d-flex justify-content-center" style="width: 23em;border-top: 0; border-left: 0;border-right: 0;">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center align-item-center  pt-3 ">
+                            <i class="fa-solid fa-unlock pt-3" style="font-size: 1.9em; color: #4fc3f7;"></i>
+                            
+
+    
+                            
+                            <input type="password" placeholder="Password" name="password" class="p-3 d-flex justify-content-center" style="width: 23em; border-top: 0; border-left: 0; border-right: 0;">
+                            
+                        </div>
+                        
+                    <a href=""></a>
+                     <button type="submit" class="btn btn-primary d-flex justify-content-center mt-5" style="background-color: #4fc3f7; margin-left: 21em; width: 6em;">Submit</button>
+                     
+                     </form>
+                     <!-- registration form -->
+                     <form action="/register" method = "post" id = "register" class="input-group d-flex justify-content-center" id="register ">
+                        
+                        <div class=" mb-3  d-flex justify-content-center align-item-center ">
+                         
+                        
+                         <input type="text" placeholder="SIGNUP to create new Parent/Student account"class="p- ms-5 d-flex justify-content-center" style="width: 23em;border-top: 0; border-left: 0;border-right: 0; border-bottom: 0;">
+                        </div>
+                        <div class="mb-3  d-flex justify-content-center align-item-center pt-">
+                         <i class="fa-solid fa-user pt-3 " style="font-size: 1.9em; color: #4fc3f7;"></i>
+                        
+                         <input type="text" placeholder="Name" name="name" class="p-3 d-flex justify-content-center" style="width: 23em;border-top: 0; border-left: 0;border-right: 0;">
+                        </div>
+                        <div class="mb-3  d-flex justify-content-center align-item-center pt-3">
+                            
+                            <i class="fa-solid fa-envelope pt-3 " style="font-size: 1.9em; color: #4fc3f7;"></i>
+                            
+    
+                            
+                            <input type="email" placeholder="Email" name="email" class="p-3 d-flex justify-content-center" style="width: 23em;border-top: 0; border-left: 0;border-right: 0;">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center align-item-center  pt-3 ">
+                            <i class="fa-solid fa-unlock pt-3" style="font-size: 1.9em; color: #4fc3f7;"></i>
+                            
+
+    
+                            
+                            <input type="password" placeholder="Password" name="password" class="p-3 d-flex justify-content-center" style="width: 23em; border-top: 0; border-left: 0; border-right: 0;">
+                            
+                        </div>
+                        
+                    
+                     <button type="submit" class="btn btn-primary d-flex justify-content-center mt-2" style="background-color: #4fc3f7; margin-left: 21em; width: 6em;">register</button>
+                     
+                     </form>
+                     </div>
+                     </div>
+        </ul>
+        
+    </div>
+    <script>
+   
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn")
+      
+        function register()
+        {
+           x.style.top = "-600px"
+           y.style.top = "-330px"
+           z.style.left =  "118px"
+        }
+        function login()
+        {
+           x.style.top = "-0px"
+           y.style.top = "-847px"
+           z.style.left =  "0px"
+        }
+      
+      </script>
+        
+  
+<%-include('footer')-%>
